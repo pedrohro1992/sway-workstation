@@ -1,0 +1,66 @@
+/* Catppuccin Mocha - Solid */
+
+* {
+    bg: #1e1e2e;
+    bg-alt: #313244;
+    bg-hover: #45475a;
+    fg: #cdd6f4;
+    selected-bg: #89b4fa;
+    selected-fg: #1e1e2e;
+
+    border-radius: 18px;
+}
+
+window {
+    width: 28%;
+    padding: 20px;
+    background-color: #1e1e2e;
+    border: 2px;
+    border-color: #313244;
+    border-radius: 22px;
+}
+
+mainbox {
+    spacing: 12px;
+}
+
+/* Caixa de busca */
+inputbar {
+    background-color: #313244;
+    border-radius: 14px;
+    padding: 10px 14px;
+}
+
+prompt {
+    text-color: #89b4fa;
+}
+
+entry {
+    text-color: #cdd6f4;
+}
+
+/* Lista */
+listview {
+    lines: 6;   /* mantém menos opções visíveis */
+    spacing: 6px;
+    scrollbar: false;
+}
+
+element {
+    background-color: #313244;
+    padding: 10px 14px;
+    border-radius: 14px;
+}
+
+element-text {
+    text-color: #cdd6f4;
+}
+
+element selected {
+    background-color: #89b4fa;
+}
+
+element selected element-text {
+    text-color: #1e1e2e;
+}
+

@@ -1,0 +1,67 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 36,
+  "spacing": 6,
+
+  "modules-left": ["sway/workspaces"],
+  "modules-center": ["mpris"],
+  "modules-right": [
+    "idle_inhibitor",
+    "pulseaudio",
+    "cpu",
+    "memory",
+    "clock",
+    "custom/hidden"
+  ],
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    },
+    "tooltip-format-activated": "Idle Inhibitor: ON",
+    "tooltip-format-deactivated": "Idle Inhibitor: OFF"
+  },
+
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": false
+  },
+
+  "mpris": {
+    "format": "  {title}",
+    "max-length": 40
+  },
+
+  "clock": {
+    "format": "  {:%H:%M}"
+  },
+
+  "cpu": {
+    "format": "  {usage}%"
+  },
+
+  "battery": {
+    "format": "  {capacity}%"
+  },
+
+
+  "memory": {
+    "format": "󰍛  {percentage}%",
+    "interval": 5,
+    "tooltip-format": "RAM: {used:0.1f}G / {total:0.1f}G"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-icons": ["", "", ""]
+  },
+
+  "custom/hidden": {
+          "exec": "~/.config/sway/scripts/hidden-count.sh",
+          "interval": 5,
+          "return-type": "json"
+  }
+}
+
